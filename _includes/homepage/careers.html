@@ -1,17 +1,27 @@
 {%- assign homepage = site.data.homepage -%}
 {%- assign careers-stories = site.data.careers-stories -%}
 
-<section class="bp-section">
+
+<style>
+.careers{
+    background:purple;
+}
+
+.color_white{
+    color:white;
+}
+</style>
+<section class="bp-section careers">
     <div class="bp-container is-fluid">
         <div class="row">
             <div class="col is-half is-offset-one-quarter has-text-centered padding--top--lg">
-                <p class="padding--bottom eyebrow is-uppercase">
+                <p class="padding--bottom eyebrow is-uppercase color_white">
                     {{- homepage.careers-title -}}
                 </p>
-                <h1 class="has-text-secondary padding--bottom">
+                <h1 class="has-text-secondary padding--bottom color_white">
                     <b>{{- homepage.careers-subtitle -}}</b>
                 </h1>
-                <p class="padding--bottom">
+                <p class="padding--bottom color_white">
                     {{- homepage.careers-description -}}
                 </p>
             </div>
