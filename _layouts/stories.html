@@ -21,14 +21,14 @@ layout: default
         <div class="row">
             <div class="col is-three-quarters-desktop is-fullwidth bp-overflow-buttons padding--left--none padding--right--none">
                 <div class="bp-buttons">
-                    {%- if site.data.resources -%}
-                        {%- assign categories = site.data.resources.categories -%}
+                    {%- if site.data.stories -%}
+                        {%- assign categories = site.data.stories.categories -%}
                     {%- else -%}
                         {%- assign categories = site.categories -%}
                     {%- endif -%}
 
                     {%- for category-element in categories -%}
-                        {%- if site.data.resources -%}
+                        {%- if site.data.stories -%}
                             {%- capture category_name -%} {{- category-element.category-name -}} {%- endcapture -%}
                         {%- else -%}
                             {%- capture category_name -%} {{- category-element | first -}} {%- endcapture -%}
