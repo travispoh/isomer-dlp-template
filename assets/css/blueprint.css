@@ -4909,11 +4909,11 @@ table.table-h tbody tr:last-child th {
     font-size: 1rem !important;
 }
 
-.bp-section.is-small.bp-section-pagetitle {
+/* .bp-section.is-small.bp-section-pagetitle {
     padding: 1.5rem;
     padding-bottom: 2.25rem;
     background-color: #0487bf;
-}
+} */
 
 .bp-youtube {
     position: relative;
