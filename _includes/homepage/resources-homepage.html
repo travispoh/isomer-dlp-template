@@ -30,7 +30,7 @@
                     {%- endif -%}
                 {%- endfor -%}
                 {%- comment -%} Temporarily disable post.image thumbnail display - change post.imageStuff back to post.image when we are ready to release the feature {%- endcomment -%}
-                {%- if post.imageStuff -%}
+                {%- if post.image -%}
                 <div class="image-card">
                     <a href="{{- post.url | relative_url | append: '.html'}}" class="has-text-grey-dark is-media-card">
                     <img src="{{site.baseurl}}{{post.image}}" alt="">
