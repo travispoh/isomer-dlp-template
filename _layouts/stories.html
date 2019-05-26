@@ -27,7 +27,7 @@ layout: default
                     {%- else -%}
                         {%- assign categories =  -%}
                     {%- endif -%}
-                    {% assign categories = "media, features" | split: ','%}
+                
                     {%- for category-element in categories -%}
                         {%- if site.data.stories -%}
                             {%- capture category_name -%} {{- category-element.category-name -}} {%- endcapture -%}
