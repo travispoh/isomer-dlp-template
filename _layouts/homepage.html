@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+
+<style>
+.homepage-divider{
+	margin-bottom: -10px;
+}
+
+</style>
 {%- if page.url == "/" -%}
 	{%- assign notification_content = content | strip_html | strip -%}
 	{%- if notification_content != "" -%}
@@ -44,7 +51,7 @@ layout: default
 {%- if site.homepage_programmes == true -%}
 	{%- include homepage/programmes.html -%}
 {%- endif -%}
-<img src='images/homepage-divider.jpg'/>
+<img src='images/homepage-divider.jpg' class='homepage-divider'/>
 {%- comment -%} Resources homepage toggle {%- endcomment -%}
 {%- if site.homepage_resources == true -%}
 	{%- include homepage/resources-homepage.html -%}
